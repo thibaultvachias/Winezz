@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <LinearLayout android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="7sp"
+        android:layout_marginBottom="-10sp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true" >
+        
+        <Button android:id="@+id/btn_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6sp"
+            android:background="@drawable/icon_list_on" />
+    
+        <Button android:id="@+id/btn_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6sp"
+            android:background="@drawable/icon_map_off" />
+    
+    </LinearLayout>    
+        
+    <LinearLayout android:id="@+id/LL_listeView"
+        android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@id/menu"
+		android:background="@drawable/background_list" >
+        
+	    <!-- <com.highconnexion.android.ihm.PullToRefreshListView
+	        android:id="@+id/android:list"
+	        android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:cacheColorHint="#00000000"
+			android:transcriptMode="disabled"/>
+	     -->
+	     
+	     <ListView android:id="@+id/listeView1"
+	        android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:cacheColorHint="#00000000"
+			android:transcriptMode="disabled"
+			android:divider="#ffffff"
+			android:layout_marginTop="20sp"
+			android:layout_marginBottom="20sp"
+			android:layout_marginLeft="23.5sp"
+			android:layout_marginRight="24sp" >
+	     </ListView>
+	     
+	     <com.google.android.maps.MapView android:id="@+id/mapView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginTop="20sp"
+			android:layout_marginBottom="20sp"
+			android:layout_marginLeft="23.5sp"
+			android:layout_marginRight="24sp"
+	        android:enabled="true"
+	        android:clickable="true"
+	        android:apiKey="0tuVQcBsCsmhLZckmz0LCIbZMqw8PZzblJR5hrg"
+	        android:visibility="gone" />
+	         
+	</LinearLayout>
+	    
+</RelativeLayout>

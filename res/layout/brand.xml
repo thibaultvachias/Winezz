@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RootView"
+    style="@style/ThemeTranslucent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#cdc8c8" >
+		 
+    <include layout="@layout/banner" android:id="@+id/brand_banner" />
+    
+	<RelativeLayout android:id="@+id/LL_Bottom"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginTop="10sp"
+		android:layout_marginLeft="8sp"
+		android:layout_marginRight="8sp"
+		android:layout_marginBottom="10sp" >
+		
+	    <Button android:id="@+id/Cross"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/button_cross"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentRight="true" />
+	    
+	    <RelativeLayout android:id="@+id/LL_Bottom"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:layout_marginTop="0sp"
+			android:layout_marginLeft="0sp"
+			android:layout_marginRight="0sp"
+			android:layout_marginBottom="0sp"
+			android:orientation="vertical" >
+	    
+	        <RelativeLayout android:id="@+id/LL_img_pub_product"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_centerHorizontal="true"
+	           	android:layout_centerVertical="true" >
+
+	           		<ProgressBar android:id="@+id/progressBarBrand"
+	           		    style="?android:attr/progressBarStyleSmall"
+	           		    android:layout_width="wrap_content"
+	           		    android:layout_height="wrap_content"
+	           		    android:layout_centerHorizontal="true"
+	           		    android:layout_centerVertical="true"
+	           		    android:visibility="visible" />
+
+	           		<ImageView
+	           		    android:id="@+id/BrandImg"
+	           		    android:layout_width="fill_parent"
+	           		    android:layout_height="wrap_content"
+	           		    android:layout_centerHorizontal="true"
+	           		    android:layout_centerVertical="true"
+	           		    android:adjustViewBounds="true"
+	           		    android:scaleType="fitCenter"
+	           		    android:src="@drawable/pub_palais" />
+	    			
+			</RelativeLayout>
+	            
+		</RelativeLayout>
+	        
+	</RelativeLayout>
+		      
+</LinearLayout>
